@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | lwl-ong博客</title>
+  <title>双色球游戏 | lwl-ong博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="lwl-ong博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="代码如下package demo;import java.util.*; public class test {    public static void main(String[] args) {        //定义一个数组，用来存放系统自动生成的红色球号码        int[] sysRedBall = new int[6];        //定义一个整数，用来存放系统自动生成的蓝">
+<meta property="og:type" content="article">
+<meta property="og:title" content="双色球游戏">
+<meta property="og:url" content="http://yoursite.com/2019/08/05/双色球游戏/index.html">
 <meta property="og:site_name" content="lwl-ong博客">
+<meta property="og:description" content="代码如下package demo;import java.util.*; public class test {    public static void main(String[] args) {        //定义一个数组，用来存放系统自动生成的红色球号码        int[] sysRedBall = new int[6];        //定义一个整数，用来存放系统自动生成的蓝">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-05T12:54:50.176Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lwl-ong博客">
+<meta name="twitter:title" content="双色球游戏">
+<meta name="twitter:description" content="代码如下package demo;import java.util.*; public class test {    public static void main(String[] args) {        //定义一个数组，用来存放系统自动生成的红色球号码        int[] sysRedBall = new int[6];        //定义一个整数，用来存放系统自动生成的蓝">
   
     <link rel="alternative" href="/atom.xml" title="lwl-ong博客" type="application/atom+xml">
   
@@ -150,130 +154,227 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-双色球游戏" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      双色球游戏
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/05/双色球游戏/" class="archive-article-date">
+
+        
+        <a href="/2019/08/05/双色球游戏/" class="archive-article-date">
   	<time datetime="2019-08-05T12:53:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-05</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/05/双色球游戏/">双色球游戏</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><p>package demo;<br>import java.util.*;</p>
+<p>public class test {<br>    public static void main(String[] args) {<br>        //定义一个数组，用来存放系统自动生成的红色球号码<br>        int[] sysRedBall = new int[6];<br>        //定义一个整数，用来存放系统自动生成的蓝色球号码<br>        int sysBlueBall = 0;</p>
+<pre><code>    //定义一个数组，存放我们用户、玩家自己选择的6个红色球号码
+    int[] userRedBall = new int[6];
+    //定义一个整数，用来存放我们用户、玩家自己选择的蓝色球号码
+    int userBlueBall = 0;
+    //定义两个整数，用来存放正确的号码个数
+    int redCount = 0;
+    int blueCount = 0;
+    //定义一个数组，存放我们的红色球的号码池，1-33
+    int[] redBalls = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33};
 
-        <div class="article-info info-on-right">
-          
-          
+    //让系统自动生成中奖号码
+    //获取随机数
+    Random r = new Random();
+    //System.out.println(r.nextInt(33));
+    for (int i=0; i&lt;sysRedBall.length; i++){
+        //虽然可以通过6次随机数，产生出6个下标，来获取redBalls里的6个数
+        //但是会出现重复的随机数，就会取出相同的号码来
+        int index = 0;
+        while (true){
+            index = r.nextInt(33);
+            if (redBalls[index] !=-1){
+                sysRedBall[i] = redBalls[index];
+                redBalls[index] = -1;
+                break;
+            }
+        }
 
+    }
+    sysBlueBall = r.nextInt(16)+1;
+
+    //让玩家选择双色球的号码
+    Scanner sc = new Scanner(System.in);
+    System.out.println(&quot;请选择红球的号码，1-33之间选择，选6次：&quot;);
+    for (int i=0;i&lt;userRedBall.length; i++){
+        userRedBall[i] = sc.nextInt();//捕获我们用户在键盘上输入的数组
+
+    }
+    System.out.println(&quot;请选择蓝色球号码，1-16之间选，选1次：&quot;);
+    userBlueBall = sc.nextInt();
+
+    //判断中没中奖
+    for (int i=0; i&lt;sysRedBall.length; i++){
+        for (int j=0; j&lt;userRedBall.length; j++){
+            redCount++;
+        }
+    }
+    if (userBlueBall==sysBlueBall){
+        blueCount++;
+    }
+
+    //显示中奖情况
+    if (redCount==6 &amp;&amp; blueCount==1){
+        System.out.println(&quot;恭喜你中了一等奖，奖金1000万！&quot;);
+    }else if (redCount==6 &amp;&amp; blueCount==0){
+        System.out.println(&quot;恭喜你中了二等奖，奖金500万！&quot;);
+    }else if (redCount==5 &amp;&amp; blueCount==1){
+        System.out.println(&quot;恭喜你中了三等奖，奖金3000元！&quot;);
+    }else if ((redCount==5 &amp;&amp; blueCount==0) || (redCount==4 &amp;&amp; blueCount==1)){
+        System.out.println(&quot;恭喜你中了四等奖，奖金200元！&quot;);
+    }else if ((redCount==4 &amp;&amp; blueCount==0) || (redCount==3 &amp;&amp; blueCount==1)){
+        System.out.println(&quot;恭喜你中了五等奖，奖金10元！&quot;);
+    }else if ((redCount==2 &amp;&amp; blueCount==1) || (redCount==1 &amp;&amp; blueCount==1) || (redCount==0 &amp;&amp; blueCount==1)){
+        System.out.println(&quot;恭喜你中了六等奖，奖金5元！&quot;);
+    }else{
+        System.out.println(&quot;谢谢惠顾，下次再来！&quot;);
+    }
+    //把系统开奖号码显示出来
+    System.out.println(&quot;本期开奖红球号码：&quot;+Arrays.toString(sysRedBall)+&quot;篮球号码：&quot;+sysBlueBall);
+    System.out.println(&quot;玩家选择的红球号码：&quot;+Arrays.toString(userRedBall)+&quot;篮球号码：&quot;+userBlueBall);
+}</code></pre><p>}</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/05/双色球游戏/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/03/此文仅用于信息说明/" class="archive-article-date">
-  	<time datetime="2019-08-02T16:28:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/03/此文仅用于信息说明/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">此文仅用于信息说明</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/03/此文仅用于信息说明/">此文仅用于信息说明</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/31/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-31T11:32:35.891Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/31/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/31/第一天的搭建过程踩坑记录/" class="archive-article-date">
-  	<time datetime="2019-07-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/31/第一天的搭建过程踩坑记录/">第一天的搭建过程踩坑记录（Hexo+GitHub自建博客）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -296,8 +397,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
