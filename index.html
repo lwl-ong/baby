@@ -172,11 +172,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><p>package demo;<br>import java.util.*;<br>public class test {<br>    public static void main(String[] args) {<br>        //定义一个数组，用来存放系统自动生成的红色球号码<br>        int[] sysRedBall = new int[6];<br>        //定义一个整数，用来存放系统自动生成的蓝色球号码<br>        int sysBlueBall = 0;</p>
+        <h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><p>package demo;<br>import java.util.*;</p>
+<p>public class test {<br>    public static void main(String[] args) {<br>        //定义一个数组，用来存放系统自动生成的红色球号码<br>        int[] sysRedBall = new int[6];<br>        //定义一个整数，用来存放系统自动生成的蓝色球号码<br>        int sysBlueBall = 0;</p>
 <pre><code>    //定义一个数组，存放我们用户、玩家自己选择的6个红色球号码
     int[] userRedBall = new int[6];
     //定义一个整数，用来存放我们用户、玩家自己选择的蓝色球号码
     int userBlueBall = 0;
+
     //定义两个整数，用来存放正确的号码个数
     int redCount = 0;
     int blueCount = 0;
@@ -185,8 +187,8 @@
 
     //让系统自动生成中奖号码
     //获取随机数
-    Random r = new Random();
-    //System.out.println(r.nextInt(33));
+    Random r = new Random();//Random一个实例对象r
+    //System.out.println(r.nextInt(6));//调用nextInt方法随机产生0-32之间一个整数
     for (int i=0; i&lt;sysRedBall.length; i++){
         //虽然可以通过6次随机数，产生出6个下标，来获取redBalls里的6个数
         //但是会出现重复的随机数，就会取出相同的号码来
@@ -216,7 +218,9 @@
     //判断中没中奖
     for (int i=0; i&lt;sysRedBall.length; i++){
         for (int j=0; j&lt;userRedBall.length; j++){
-            redCount++;
+            if (sysRedBall[i]==userRedBall[j]) {
+                redCount++;
+            }
         }
     }
     if (userBlueBall==sysBlueBall){
