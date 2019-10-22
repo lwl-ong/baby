@@ -8,13 +8,13 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>算法的重要性！（100000以内的质数找出优化与不优化所花的时间） | lwl-ong博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="方法一 方法二 方法三">
+  <meta name="description" content="/*100000以内的所有质数的输出。质数：也称素数，只能被1和它本身整除的自然数。–&amp;gt;从2开始，到这个数减1结束为止，都不能被这个数本身整除。最小的质数是：2 */public class PrimeNumberTest {    public static void main(String[] args) {        //获取当前时间距离1970-01-01 00:00:00 的毫">
 <meta name="keywords" content="算法的重要性！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法的重要性！（100000以内的质数找出优化与不优化所花的时间）">
 <meta property="og:url" content="http://yoursite.com/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/index.html">
 <meta property="og:site_name" content="lwl-ong博客">
-<meta property="og:description" content="方法一 方法二 方法三">
+<meta property="og:description" content="/*100000以内的所有质数的输出。质数：也称素数，只能被1和它本身整除的自然数。–&amp;gt;从2开始，到这个数减1结束为止，都不能被这个数本身整除。最小的质数是：2 */public class PrimeNumberTest {    public static void main(String[] args) {        //获取当前时间距离1970-01-01 00:00:00 的毫">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/1.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/2.png">
@@ -22,10 +22,10 @@
 <meta property="og:image" content="http://yoursite.com/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/4.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/5.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/6.png">
-<meta property="og:updated_time" content="2019-09-06T11:19:10.383Z">
+<meta property="og:updated_time" content="2019-10-22T15:56:20.899Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法的重要性！（100000以内的质数找出优化与不优化所花的时间）">
-<meta name="twitter:description" content="方法一 方法二 方法三">
+<meta name="twitter:description" content="/*100000以内的所有质数的输出。质数：也称素数，只能被1和它本身整除的自然数。–&amp;gt;从2开始，到这个数减1结束为止，都不能被这个数本身整除。最小的质数是：2 */public class PrimeNumberTest {    public static void main(String[] args) {        //获取当前时间距离1970-01-01 00:00:00 的毫">
 <meta name="twitter:image" content="http://yoursite.com/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/1.png">
   
     <link rel="alternative" href="/atom.xml" title="lwl-ong博客" type="application/atom+xml">
@@ -182,7 +182,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p><img src="1.png" alt><br><img src="2.png" alt></p>
+        <p>/*<br>100000以内的所有质数的输出。<br>质数：也称素数，只能被1和它本身整除的自然数。–&gt;从2开始，到这个数减1结束为止，都不能被这个数本身整除。<br>最小的质数是：2<br> */<br>public class PrimeNumberTest {<br>    public static void main(String[] args) {<br>        //获取当前时间距离1970-01-01 00:00:00 的毫秒数<br>        long start = System.currentTimeMillis();<br>        int count = 0;<br>        for (int i = 2; i &lt;=100000; i++){<br>            boolean isFlag = true;//定义一个boolean变量<br>            for (int j = 2; j &lt; Math.sqrt(i); j++){//优化二：Math.sqrt(i)i的开方、<br>                if (i % j == 0){<br>                    isFlag = false;//标识i是否被j除尽，一旦除尽修改其值<br>                    break;//优化一：当此时的i进入已经整除了一个数之后就不再计算后面的数了，直接跳出循环<br>                }<br>            }if (isFlag == true){<br>                count++;<br>            }<br>        }<br>        //获取结束时间距离1970-01-01 00:00:00 的毫秒数<br>        long end = System.currentTimeMillis();<br>        System.out.println(“质数的个数为：”+count);<br>        System.out.println(“所花费的时间为：”+(end-start));<br>    }<br>}</p>
+<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p><img src="1.png" alt><br><img src="2.png" alt></p>
 <h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p><img src="3.png" alt><br><img src="4.png" alt></p>
 <h2 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h2><p><img src="5.png" alt><br><img src="6.png" alt></p>
 
