@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>引用数据类型传递和基本数据类型传递的区别 | lwl-ong博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###Dog类package demo; public class Dog {    //定义两个私有变量    private String name;    private int age; //生成get和set方法 public String getName() {     return name; } public void setName(String name){     this">
+  <meta name="description" content="###Dog类12345678910111213141516171819202122package demo;public class Dog &amp;#123;    //定义两个私有变量    private String name;    private int age;    //生成get和set方法    public String getName() &amp;#123;        retur">
 <meta property="og:type" content="article">
 <meta property="og:title" content="引用数据类型传递和基本数据类型传递的区别">
 <meta property="og:url" content="http://yoursite.com/2019/08/09/引用数据类型传递和基本数据类型传递的区别/index.html">
 <meta property="og:site_name" content="lwl-ong博客">
-<meta property="og:description" content="###Dog类package demo; public class Dog {    //定义两个私有变量    private String name;    private int age; //生成get和set方法 public String getName() {     return name; } public void setName(String name){     this">
+<meta property="og:description" content="###Dog类12345678910111213141516171819202122package demo;public class Dog &amp;#123;    //定义两个私有变量    private String name;    private int age;    //生成get和set方法    public String getName() &amp;#123;        retur">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-09T13:16:44.752Z">
+<meta property="og:updated_time" content="2021-04-22T08:55:17.992Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="引用数据类型传递和基本数据类型传递的区别">
-<meta name="twitter:description" content="###Dog类package demo; public class Dog {    //定义两个私有变量    private String name;    private int age; //生成get和set方法 public String getName() {     return name; } public void setName(String name){     this">
+<meta name="twitter:description" content="###Dog类12345678910111213141516171819202122package demo;public class Dog &amp;#123;    //定义两个私有变量    private String name;    private int age;    //生成get和set方法    public String getName() &amp;#123;        retur">
   
     <link rel="alternative" href="/atom.xml" title="lwl-ong博客" type="application/atom+xml">
   
@@ -174,36 +174,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p> ###Dog类<br>package demo;</p>
-<p>public class Dog {<br>    //定义两个私有变量<br>    private String name;<br>    private int age;</p>
-<pre><code>//生成get和set方法
-public String getName() {
-    return name;
-}
-public void setName(String name){
-    this.name = name;
-}
-public int getAge() {
-    return age;
-}
-public void setAge(int age) {
-    this.age = age;
-}</code></pre><p>}</p>
-<p> ###DogMain类<br>package demo;</p>
-<p>public class DogMain {<br>    public void aa(Dog dog){//创建一个aa方法，传入一个参数Dog,起名为dog<br>        int age1 = dog.getAge();//定义age1为dog1对象的年龄<br>        age1 = age1+1;//把dog1的年龄加一<br>        dog.setAge(age1);//再<br>    }</p>
-<pre><code>//创建一个main方法程序入口
-public static void main(String[] args){
-    Dog dog1 = new Dog();//实例化一个对象dog1
-    dog1.setName(&quot;小白&quot;);
-    dog1.setAge(2);
+        <h2 id="Dog类"><a href="#Dog类" class="headerlink" title="###Dog类"></a>###Dog类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dog</span> </span>&#123;</span><br><span class="line">    <span class="comment">//定义两个私有变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//生成get和set方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(<span class="keyword">int</span> age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    System.out.println(dog1.getAge());//输出此时dog1的年龄
+<h2 id="DogMain类"><a href="#DogMain类" class="headerlink" title="###DogMain类"></a>###DogMain类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DogMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">aa</span><span class="params">(Dog dog)</span></span>&#123;<span class="comment">//创建一个aa方法，传入一个参数Dog,起名为dog</span></span><br><span class="line">        <span class="keyword">int</span> age1 = dog.getAge();<span class="comment">//定义age1为dog1对象的年龄</span></span><br><span class="line">        age1 = age1+<span class="number">1</span>;<span class="comment">//把dog1的年龄加一</span></span><br><span class="line">        dog.setAge(age1);<span class="comment">//再</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//创建一个main方法程序入口</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Dog dog1 = <span class="keyword">new</span> Dog();<span class="comment">//实例化一个对象dog1</span></span><br><span class="line">        dog1.setName(<span class="string">"小白"</span>);</span><br><span class="line">        dog1.setAge(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(dog1.getAge());<span class="comment">//输出此时dog1的年龄</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> DogMain().aa(dog1);<span class="comment">//在本类中直接这样写调用aa方法，把dog1的年龄加一</span></span><br><span class="line"></span><br><span class="line">        System.out.println(dog1.getAge());<span class="comment">//输出传递后的狗的年龄</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    new DogMain().aa(dog1);//在本类中直接这样写调用aa方法，把dog1的年龄加一
-
-    System.out.println(dog1.getAge());//输出传递后的狗的年龄
-}</code></pre><p>}</p>
-<p>引用数据类型传递值会发生变化，而基本数据类型传递的值不会发生变化。<br>因为引用数据类型的信息一般储存在堆内存中，在栈内存中储存的是对应的指向堆内存中的地址<br>基本数据类型的信息一般大小较小直接储存在栈内存中，，，而信息传递一般只会传递栈内存中的信息！</p>
+<p>引用数据类型传递值会发生变化，而基本数据类型传递的值不会发生变化。<br>因为引用数据类型的信息一般储存在堆内存中，在栈内存中储存的是对应的指向堆内存中的地址<br>基本数据类型的信息一般大小较小直接储存在栈内存中，而信息传递一般只会传递栈内存中的信息！</p>
 
       
 
