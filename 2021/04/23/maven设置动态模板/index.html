@@ -6,23 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>第一天的搭建过程踩坑记录（Hexo+GitHub自建博客） | lwlong博客</title>
+  <title>maven设置动态模板 | lwlong博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="不要成为明天再写系列的人​    今天弄了一天了，对于还是一个菜鸟的我，把我折腾的累的要死，我觉着我深深的体会到了“程序猿”找bug痛苦！好吧，下面进入正题，首先对于还是第一次自建博客的萌新来说要做好各种部署准备：1.有个GitHub账号，没有的话去注册一个（浏览器输入https://github.com/join?source=header-home填写好信息点击Create an accoun">
+  <meta name="description" content="Maven设置pom文件坐标时，自动写入模板坐标1、点击File/Settings，打开设置。搜索live –&amp;gt; 点击live Templates 2、点击 + 号创建一个新的分组，输入名字cumtom点击OK  3、选中新建的分组cumtom 再点击 + 号，设置模板 eg:在Template text中设置如下代码 12345678&amp;lt;plugin&amp;gt;    &amp;lt;groupI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一天的搭建过程踩坑记录（Hexo+GitHub自建博客）">
-<meta property="og:url" content="http://yoursite.com/2019/07/31/第一天的搭建过程踩坑记录/index.html">
+<meta property="og:title" content="maven设置动态模板">
+<meta property="og:url" content="http://yoursite.com/2021/04/23/maven设置动态模板/index.html">
 <meta property="og:site_name" content="lwlong博客">
-<meta property="og:description" content="不要成为明天再写系列的人​    今天弄了一天了，对于还是一个菜鸟的我，把我折腾的累的要死，我觉着我深深的体会到了“程序猿”找bug痛苦！好吧，下面进入正题，首先对于还是第一次自建博客的萌新来说要做好各种部署准备：1.有个GitHub账号，没有的话去注册一个（浏览器输入https://github.com/join?source=header-home填写好信息点击Create an accoun">
+<meta property="og:description" content="Maven设置pom文件坐标时，自动写入模板坐标1、点击File/Settings，打开设置。搜索live –&amp;gt; 点击live Templates 2、点击 + 号创建一个新的分组，输入名字cumtom点击OK  3、选中新建的分组cumtom 再点击 + 号，设置模板 eg:在Template text中设置如下代码 12345678&amp;lt;plugin&amp;gt;    &amp;lt;groupI">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2019/07/31/第一天的搭建过程踩坑记录/01node%E7%89%88%E6%9C%AC%E5%8F%B7.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/31/第一天的搭建过程踩坑记录/02hexo%E5%AE%89%E8%A3%85.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/31/第一天的搭建过程踩坑记录/03%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE.png">
-<meta property="og:updated_time" content="2021-04-26T07:14:14.626Z">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mcQ9UOKdaxEYonGCFCGn1vSPiS4x309tDRlrCM2F8PJIaeAx13yJqqKSusVPj1JatrdDXlXQ05w67CPb88AQTlJ4!/b&bo=vgMdAgAAAAADF5A!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mceVB5kyGWx49WbXSZ1UXZ35db0.7wyuirSsO1XJGh34F.kCSu2Ms6nxxGr2Wm2yKYosfTC.suNkLF4xfUjmEknw!/b&bo=GgPYAQAAAAADF*I!&rf=viewer_4">
+<meta property="og:updated_time" content="2021-04-26T07:14:24.098Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一天的搭建过程踩坑记录（Hexo+GitHub自建博客）">
-<meta name="twitter:description" content="不要成为明天再写系列的人​    今天弄了一天了，对于还是一个菜鸟的我，把我折腾的累的要死，我觉着我深深的体会到了“程序猿”找bug痛苦！好吧，下面进入正题，首先对于还是第一次自建博客的萌新来说要做好各种部署准备：1.有个GitHub账号，没有的话去注册一个（浏览器输入https://github.com/join?source=header-home填写好信息点击Create an accoun">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/31/第一天的搭建过程踩坑记录/01node%E7%89%88%E6%9C%AC%E5%8F%B7.png">
+<meta name="twitter:title" content="maven设置动态模板">
+<meta name="twitter:description" content="Maven设置pom文件坐标时，自动写入模板坐标1、点击File/Settings，打开设置。搜索live –&amp;gt; 点击live Templates 2、点击 + 号创建一个新的分组，输入名字cumtom点击OK  3、选中新建的分组cumtom 再点击 + 号，设置模板 eg:在Template text中设置如下代码 12345678&amp;lt;plugin&amp;gt;    &amp;lt;groupI">
+<meta name="twitter:image" content="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mcQ9UOKdaxEYonGCFCGn1vSPiS4x309tDRlrCM2F8PJIaeAx13yJqqKSusVPj1JatrdDXlXQ05w67CPb88AQTlJ4!/b&bo=vgMdAgAAAAADF5A!&rf=viewer_4">
   
     <link rel="alternative" href="/atom.xml" title="lwlong博客" type="application/atom+xml">
   
@@ -158,29 +157,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-第一天的搭建过程踩坑记录" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-maven设置动态模板" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      第一天的搭建过程踩坑记录（Hexo+GitHub自建博客）
+      maven设置动态模板
     </h1>
   
 
         
-        <a href="/2019/07/31/第一天的搭建过程踩坑记录/" class="archive-article-date">
-  	<time datetime="2019-07-31T05:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
+        <a href="/2021/04/23/maven设置动态模板/" class="archive-article-date">
+  	<time datetime="2021-04-23T04:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="不要成为明天再写系列的人"><a href="#不要成为明天再写系列的人" class="headerlink" title="不要成为明天再写系列的人"></a>不要成为明天再写系列的人</h2><p>​    今天弄了一天了，对于还是一个菜鸟的我，把我折腾的累的要死，我觉着我深深的体会到了“程序猿”找bug痛苦！<br>好吧，下面进入正题，首先对于还是第一次自建博客的萌新来说要做好各种部署准备：<br>1.有个GitHub账号，没有的话去注册一个（浏览器输入<a href="https://github.com/join?source=header-home填写好信息点击Create" target="_blank" rel="noopener">https://github.com/join?source=header-home填写好信息点击Create</a> an account即可）注册成功退出<br>2.git的环境配置和安装（参考链接<a href="https://blog.csdn.net/qq_19681347/article/details/90768640）" target="_blank" rel="noopener">https://blog.csdn.net/qq_19681347/article/details/90768640）</a><br>3.node.js下载安装，下载地址：https//:nodejs.org(下载LTS，安装时直接都点下一步安装完成就行了)<br>（ps：安装node.js完成后去命令行初始化hexo，如果总是报错建议换个低版本的我安装的是10.15.2版本的）<br>4.打开命令控制台（windows键＋R输入cmd，然后回车）<br>5.输入node -v看node.js是否安装好，查看安装的版本。。。npm是包管理器，查看版本号的命令npm -v<br><img src="01node%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt><br>6.借助npm包管理器来安装hexo框架<br><img src="02hexo%E5%AE%89%E8%A3%85.png" alt><br>执行完之后再输入mkdir blog命令回车，此命令是新建一个文件夹的，然后再cd blog回车，进入该文件夹，然后再执行hexo init回车（这个命令执行不了的，可能就是你git环境没配置好）<br>7.到这里hexo就安装完成了，此时已经你执行命令行的路径下会生成一个blog文件夹，例如我这里就再C盘下/用户/13478/blog这个文件夹就是你的个人博客，博客主题、博客设置等等都再这个文件夹里</p>
-<h2 id="把博客部署到GitHub上去"><a href="#把博客部署到GitHub上去" class="headerlink" title="把博客部署到GitHub上去"></a>把博客部署到GitHub上去</h2><p>登录自己的GitHub，新建一个仓库New repository,在Repository name下按格式命名（你的昵称.github.io），Description描述自己随便填，其他不用点，点击Create repository完成！<br>然后把仓库地址SSH复制填写到hexo中，然后去填写呢，回到命令行下cd到blog目录下执行cnpm install –save hexo-deployer-git完成后去此电脑找到blog目录，打开_config.yml文件，添加上博客地址！！！<br><img src="03%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE.png" alt> OK!，然后再回到命令行，再blog下执行hexo d回车，就推到了远端，通过你刚刚的仓库地址任何人都可以访问了</p>
-<h2 id="加油吧！参考文献：www-codesheep-cn"><a href="#加油吧！参考文献：www-codesheep-cn" class="headerlink" title="加油吧！参考文献：www.codesheep.cn"></a>加油吧！参考文献：<a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></h2>
+        <h1 id="Maven设置pom文件坐标时，自动写入模板坐标"><a href="#Maven设置pom文件坐标时，自动写入模板坐标" class="headerlink" title="Maven设置pom文件坐标时，自动写入模板坐标"></a>Maven设置pom文件坐标时，自动写入模板坐标</h1><p>1、点击File/Settings，打开设置。搜索live –&gt; 点击live Templates</p>
+<p>2、点击 + 号创建一个新的分组，输入名字cumtom点击OK</p>
+<p><img src="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mcQ9UOKdaxEYonGCFCGn1vSPiS4x309tDRlrCM2F8PJIaeAx13yJqqKSusVPj1JatrdDXlXQ05w67CPb88AQTlJ4!/b&bo=vgMdAgAAAAADF5A!&rf=viewer_4" alt="截图丢失"></p>
+<p>3、选中新建的分组cumtom 再点击 + 号，设置模板</p>
+<p>eg:在Template text中设置如下代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">port</span>&gt;</span>8888<span class="tag">&lt;/<span class="name">port</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mceVB5kyGWx49WbXSZ1UXZ35db0.7wyuirSsO1XJGh34F.kCSu2Ms6nxxGr2Wm2yKYosfTC.suNkLF4xfUjmEknw!/b&bo=GgPYAQAAAAADF*I!&rf=viewer_4" alt="截图丢失"></p>
+<p>4、点击Define设置在什么文件下使用该模板[这里可以选中XML]；设置完成点击ok，之后即可在pom文件中直接输入tomcat7就能快速写出设置号的模板</p>
+
       
 
       
@@ -269,7 +275,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/31/第一天的搭建过程踩坑记录/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/04/23/maven设置动态模板/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +289,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/05/双色球游戏/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          双色球游戏
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/31/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2021/04/22/读取properties配置文件中的参数/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">读取properties配置文件中的参数</div>
       <i class="icon-circle-right"></i>
     </a>
   

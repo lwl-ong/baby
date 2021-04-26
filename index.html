@@ -159,13 +159,13 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/22/maven设置动态模板/">读取properties配置文件中的参数</a>
+      <a class="article-title" href="/2021/04/23/maven设置动态模板/">maven设置动态模板</a>
     </h1>
   
 
         
-        <a href="/2021/04/22/maven设置动态模板/" class="archive-article-date">
-  	<time datetime="2021-04-22T04:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-22</time>
+        <a href="/2021/04/23/maven设置动态模板/" class="archive-article-date">
+  	<time datetime="2021-04-23T04:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-23</time>
 </a>
         
       </header>
@@ -193,7 +193,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/22/maven设置动态模板/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/04/23/maven设置动态模板/">展开全文 >></a>
         </p>
       
 
@@ -705,6 +705,70 @@
 
 
   
+    <article id="post-第一天的搭建过程踩坑记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/31/第一天的搭建过程踩坑记录/">第一天的搭建过程踩坑记录（Hexo+GitHub自建博客）</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/31/第一天的搭建过程踩坑记录/" class="archive-article-date">
+  	<time datetime="2019-07-31T05:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="不要成为明天再写系列的人"><a href="#不要成为明天再写系列的人" class="headerlink" title="不要成为明天再写系列的人"></a>不要成为明天再写系列的人</h2><p>​    今天弄了一天了，对于还是一个菜鸟的我，把我折腾的累的要死，我觉着我深深的体会到了“程序猿”找bug痛苦！<br>好吧，下面进入正题，首先对于还是第一次自建博客的萌新来说要做好各种部署准备：<br>1.有个GitHub账号，没有的话去注册一个（浏览器输入<a href="https://github.com/join?source=header-home填写好信息点击Create" target="_blank" rel="noopener">https://github.com/join?source=header-home填写好信息点击Create</a> an account即可）注册成功退出<br>2.git的环境配置和安装（参考链接<a href="https://blog.csdn.net/qq_19681347/article/details/90768640）" target="_blank" rel="noopener">https://blog.csdn.net/qq_19681347/article/details/90768640）</a><br>3.node.js下载安装，下载地址：https//:nodejs.org(下载LTS，安装时直接都点下一步安装完成就行了)<br>（ps：安装node.js完成后去命令行初始化hexo，如果总是报错建议换个低版本的我安装的是10.15.2版本的）<br>4.打开命令控制台（windows键＋R输入cmd，然后回车）<br>5.输入node -v看node.js是否安装好，查看安装的版本。。。npm是包管理器，查看版本号的命令npm -v<br><img src="01node%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt><br>6.借助npm包管理器来安装hexo框架<br><img src="02hexo%E5%AE%89%E8%A3%85.png" alt><br>执行完之后再输入mkdir blog命令回车，此命令是新建一个文件夹的，然后再cd blog回车，进入该文件夹，然后再执行hexo init回车（这个命令执行不了的，可能就是你git环境没配置好）<br>7.到这里hexo就安装完成了，此时已经你执行命令行的路径下会生成一个blog文件夹，例如我这里就再C盘下/用户/13478/blog这个文件夹就是你的个人博客，博客主题、博客设置等等都再这个文件夹里</p>
+<h2 id="把博客部署到GitHub上去"><a href="#把博客部署到GitHub上去" class="headerlink" title="把博客部署到GitHub上去"></a>把博客部署到GitHub上去</h2><p>登录自己的GitHub，新建一个仓库New repository,在Repository name下按格式命名（你的昵称.github.io），Description描述自己随便填，其他不用点，点击Create repository完成！<br>然后把仓库地址SSH复制填写到hexo中，然后去填写呢，回到命令行下cd到blog目录下执行cnpm install –save hexo-deployer-git完成后去此电脑找到blog目录，打开_config.yml文件，添加上博客地址！！！<br><img src="03%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE.png" alt> OK!，然后再回到命令行，再blog下执行hexo d回车，就推到了远端，通过你刚刚的仓库地址任何人都可以访问了</p>
+<h2 id="加油吧！参考文献：www-codesheep-cn"><a href="#加油吧！参考文献：www-codesheep-cn" class="headerlink" title="加油吧！参考文献：www.codesheep.cn"></a>加油吧！参考文献：<a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/31/第一天的搭建过程踩坑记录/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -718,7 +782,7 @@
 
         
         <a href="/2019/07/31/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-31T11:32:35.891Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
+  	<time datetime="2019-07-31T04:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
 </a>
         
       </header>
@@ -751,70 +815,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/07/31/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-第一天的搭建过程踩坑记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/31/第一天的搭建过程踩坑记录/">第一天的搭建过程踩坑记录（Hexo+GitHub自建博客）</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/31/第一天的搭建过程踩坑记录/" class="archive-article-date">
-  	<time datetime="2019-07-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="不要成为明天再写系列的人"><a href="#不要成为明天再写系列的人" class="headerlink" title="不要成为明天再写系列的人"></a>不要成为明天再写系列的人</h2><p>​    今天弄了一天了，对于还是一个菜鸟的我，把我折腾的累的要死，我觉着我深深的体会到了“程序猿”找bug痛苦！<br>好吧，下面进入正题，首先对于还是第一次自建博客的萌新来说要做好各种部署准备：<br>1.有个GitHub账号，没有的话去注册一个（浏览器输入<a href="https://github.com/join?source=header-home填写好信息点击Create" target="_blank" rel="noopener">https://github.com/join?source=header-home填写好信息点击Create</a> an account即可）注册成功退出<br>2.git的环境配置和安装（参考链接<a href="https://blog.csdn.net/qq_19681347/article/details/90768640）" target="_blank" rel="noopener">https://blog.csdn.net/qq_19681347/article/details/90768640）</a><br>3.node.js下载安装，下载地址：https//:nodejs.org(下载LTS，安装时直接都点下一步安装完成就行了)<br>（ps：安装node.js完成后去命令行初始化hexo，如果总是报错建议换个低版本的我安装的是10.15.2版本的）<br>4.打开命令控制台（windows键＋R输入cmd，然后回车）<br>5.输入node -v看node.js是否安装好，查看安装的版本。。。npm是包管理器，查看版本号的命令npm -v<br><img src="01node%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt><br>6.借助npm包管理器来安装hexo框架<br><img src="02hexo%E5%AE%89%E8%A3%85.png" alt><br>执行完之后再输入mkdir blog命令回车，此命令是新建一个文件夹的，然后再cd blog回车，进入该文件夹，然后再执行hexo init回车（这个命令执行不了的，可能就是你git环境没配置好）<br>7.到这里hexo就安装完成了，此时已经你执行命令行的路径下会生成一个blog文件夹，例如我这里就再C盘下/用户/13478/blog这个文件夹就是你的个人博客，博客主题、博客设置等等都再这个文件夹里</p>
-<h2 id="把博客部署到GitHub上去"><a href="#把博客部署到GitHub上去" class="headerlink" title="把博客部署到GitHub上去"></a>把博客部署到GitHub上去</h2><p>登录自己的GitHub，新建一个仓库New repository,在Repository name下按格式命名（你的昵称.github.io），Description描述自己随便填，其他不用点，点击Create repository完成！<br>然后把仓库地址SSH复制填写到hexo中，然后去填写呢，回到命令行下cd到blog目录下执行cnpm install –save hexo-deployer-git完成后去此电脑找到blog目录，打开_config.yml文件，添加上博客地址！！！<br><img src="03%E4%BB%93%E5%BA%93%E9%85%8D%E7%BD%AE.png" alt> OK!，然后再回到命令行，再blog下执行hexo d回车，就推到了远端，通过你刚刚的仓库地址任何人都可以访问了</p>
-<h2 id="加油吧！参考文献：www-codesheep-cn"><a href="#加油吧！参考文献：www-codesheep-cn" class="headerlink" title="加油吧！参考文献：www.codesheep.cn"></a>加油吧！参考文献：<a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/31/第一天的搭建过程踩坑记录/">展开全文 >></a>
         </p>
       
 
