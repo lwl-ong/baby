@@ -152,6 +152,77 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-maven设置动态模板" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/22/maven设置动态模板/">读取properties配置文件中的参数</a>
+    </h1>
+  
+
+        
+        <a href="/2021/04/22/maven设置动态模板/" class="archive-article-date">
+  	<time datetime="2021-04-22T04:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Maven设置pom文件坐标时，自动写入模板坐标"><a href="#Maven设置pom文件坐标时，自动写入模板坐标" class="headerlink" title="Maven设置pom文件坐标时，自动写入模板坐标"></a>Maven设置pom文件坐标时，自动写入模板坐标</h1><p>1、点击File/Settings，打开设置。搜索live –&gt; 点击live Templates</p>
+<p>2、点击 + 号创建一个新的分组，输入名字cumtom点击OK</p>
+<p><img src="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mcQ9UOKdaxEYonGCFCGn1vSPiS4x309tDRlrCM2F8PJIaeAx13yJqqKSusVPj1JatrdDXlXQ05w67CPb88AQTlJ4!/b&bo=vgMdAgAAAAADF5A!&rf=viewer_4" alt="截图丢失"></p>
+<p>3、选中新建的分组cumtom 再点击 + 号，设置模板</p>
+<p>eg:在Template text中设置如下代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">port</span>&gt;</span>8888<span class="tag">&lt;/<span class="name">port</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mceVB5kyGWx49WbXSZ1UXZ35db0.7wyuirSsO1XJGh34F.kCSu2Ms6nxxGr2Wm2yKYosfTC.suNkLF4xfUjmEknw!/b&bo=GgPYAQAAAAADF*I!&rf=viewer_4" alt="截图丢失"></p>
+<p>4、点击Define设置在什么文件下使用该模板[这里可以选中XML]；设置完成点击ok，之后即可在pom文件中直接输入tomcat7就能快速写出设置号的模板</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/04/22/maven设置动态模板/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-读取properties配置文件中的参数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

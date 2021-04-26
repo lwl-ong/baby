@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | lwlong博客</title>
+  <title>读取properties配置文件中的参数 | lwlong博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="lwlong博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Maven设置pom文件坐标时，自动写入模板坐标1、点击File/Settings，打开设置。搜索live –&amp;gt; 点击live Templates 2、点击 + 号创建一个新的分组，输入名字cumtom点击OK  3、选中新建的分组cumtom 再点击 + 号，设置模板 eg:在Template text中设置如下代码 12345678&amp;lt;plugin&amp;gt;    &amp;lt;groupI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读取properties配置文件中的参数">
+<meta property="og:url" content="http://yoursite.com/2021/04/22/maven设置动态模板/index.html">
 <meta property="og:site_name" content="lwlong博客">
+<meta property="og:description" content="Maven设置pom文件坐标时，自动写入模板坐标1、点击File/Settings，打开设置。搜索live –&amp;gt; 点击live Templates 2、点击 + 号创建一个新的分组，输入名字cumtom点击OK  3、选中新建的分组cumtom 再点击 + 号，设置模板 eg:在Template text中设置如下代码 12345678&amp;lt;plugin&amp;gt;    &amp;lt;groupI">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mcQ9UOKdaxEYonGCFCGn1vSPiS4x309tDRlrCM2F8PJIaeAx13yJqqKSusVPj1JatrdDXlXQ05w67CPb88AQTlJ4!/b&bo=vgMdAgAAAAADF5A!&rf=viewer_4">
+<meta property="og:image" content="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mceVB5kyGWx49WbXSZ1UXZ35db0.7wyuirSsO1XJGh34F.kCSu2Ms6nxxGr2Wm2yKYosfTC.suNkLF4xfUjmEknw!/b&bo=GgPYAQAAAAADF*I!&rf=viewer_4">
+<meta property="og:updated_time" content="2021-04-26T07:08:00.273Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lwlong博客">
+<meta name="twitter:title" content="读取properties配置文件中的参数">
+<meta name="twitter:description" content="Maven设置pom文件坐标时，自动写入模板坐标1、点击File/Settings，打开设置。搜索live –&amp;gt; 点击live Templates 2、点击 + 号创建一个新的分组，输入名字cumtom点击OK  3、选中新建的分组cumtom 再点击 + 号，设置模板 eg:在Template text中设置如下代码 12345678&amp;lt;plugin&amp;gt;    &amp;lt;groupI">
+<meta name="twitter:image" content="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mcQ9UOKdaxEYonGCFCGn1vSPiS4x309tDRlrCM2F8PJIaeAx13yJqqKSusVPj1JatrdDXlXQ05w67CPb88AQTlJ4!/b&bo=vgMdAgAAAAADF5A!&rf=viewer_4">
   
     <link rel="alternative" href="/atom.xml" title="lwlong博客" type="application/atom+xml">
   
@@ -150,313 +157,174 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-maven设置动态模板" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      读取properties配置文件中的参数
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/22/maven设置动态模板/" class="archive-article-date">
+
+        
+        <a href="/2021/04/22/maven设置动态模板/" class="archive-article-date">
   	<time datetime="2021-04-22T04:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-22</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/22/maven设置动态模板/">读取properties配置文件中的参数</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+        
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/22/读取properties配置文件中的参数/" class="archive-article-date">
-  	<time datetime="2021-04-22T04:10:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/22/读取properties配置文件中的参数/">读取properties配置文件中的参数</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
+    <div class="article-entry" itemprop="articleBody">
       
-        </div></section>
+        <h1 id="Maven设置pom文件坐标时，自动写入模板坐标"><a href="#Maven设置pom文件坐标时，自动写入模板坐标" class="headerlink" title="Maven设置pom文件坐标时，自动写入模板坐标"></a>Maven设置pom文件坐标时，自动写入模板坐标</h1><p>1、点击File/Settings，打开设置。搜索live –&gt; 点击live Templates</p>
+<p>2、点击 + 号创建一个新的分组，输入名字cumtom点击OK</p>
+<p><img src="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mcQ9UOKdaxEYonGCFCGn1vSPiS4x309tDRlrCM2F8PJIaeAx13yJqqKSusVPj1JatrdDXlXQ05w67CPb88AQTlJ4!/b&bo=vgMdAgAAAAADF5A!&rf=viewer_4" alt="截图丢失"></p>
+<p>3、选中新建的分组cumtom 再点击 + 号，设置模板</p>
+<p>eg:在Template text中设置如下代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.tomcat.maven<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>tomcat7-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">port</span>&gt;</span>8888<span class="tag">&lt;/<span class="name">port</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="http://m.qpic.cn/psc?/V50GC75s20amGr0LHzQY14oJMd1QkPtm/45NBuzDIW489QBoVep5mceVB5kyGWx49WbXSZ1UXZ35db0.7wyuirSsO1XJGh34F.kCSu2Ms6nxxGr2Wm2yKYosfTC.suNkLF4xfUjmEknw!/b&bo=GgPYAQAAAAADF*I!&rf=viewer_4" alt="截图丢失"></p>
+<p>4、点击Define设置在什么文件下使用该模板[这里可以选中XML]；设置完成点击ok，之后即可在pom文件中直接输入tomcat7就能快速写出设置号的模板</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/支付宝收款蓝色.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/微信收款绿色.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/17/十大内部排序算法-（快排）（冒泡）/" class="archive-article-date">
-  	<time datetime="2019-10-17T14:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/17/十大内部排序算法-（快排）（冒泡）/">十大内部排序算法-（快排）（冒泡）</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/04/22/maven设置动态模板/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/17/MyEclipse安装流程/" class="archive-article-date">
-  	<time datetime="2019-09-17T13:38:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-17</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/04/22/读取properties配置文件中的参数/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">读取properties配置文件中的参数</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/17/MyEclipse安装流程/">&#39;MyEclipse安装流程&#39;</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/" class="archive-article-date">
-  	<time datetime="2019-09-06T10:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/06/算法的重要性！（100000以内的质数找出优化与不优化所花的时间）/">算法的重要性！（100000以内的质数找出优化与不优化所花的时间）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法的重要性！</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/28/TCP和UDP网络编程/" class="archive-article-date">
-  	<time datetime="2019-08-28T12:33:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/28/TCP和UDP网络编程/">TCP和UDP网络编程</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/09/引用数据类型传递和基本数据类型传递的区别/" class="archive-article-date">
-  	<time datetime="2019-08-09T12:36:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/09/引用数据类型传递和基本数据类型传递的区别/">引用数据类型传递和基本数据类型传递的区别</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/05/双色球游戏/" class="archive-article-date">
-  	<time datetime="2019-08-05T12:53:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/05/双色球游戏/">双色球游戏</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/31/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-31T11:32:35.891Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/31/第一天的搭建过程踩坑记录/" class="archive-article-date">
-  	<time datetime="2019-07-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/31/第一天的搭建过程踩坑记录/">第一天的搭建过程踩坑记录（Hexo+GitHub自建博客）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -486,8 +354,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
